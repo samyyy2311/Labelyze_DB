@@ -1,5 +1,11 @@
 # Labelyze_DB
 
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/License-ODbL_v1.0-blue">
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Android-green">
+  <img alt="Mode" src="https://img.shields.io/badge/Mode-Offline--First-orange">
+</p>
+
 Product and ingredient database powering the Labelyze app.
 
 The app automatically downloads the latest `labelyze_india.db` database from GitHub Releases.
