@@ -8,7 +8,7 @@ The app automatically downloads the latest `labelyze_india.db` database from Git
 
 # Labelyze
 
-India's first global-standard product scanner for food, cosmetics, and baby products.
+An India-focused product scanner built around global regulatory references
 
 Labelyze helps people understand what they buy by analyzing ingredients against regulatory references including FSSAI, CDSCO, FDA, WHO, and EU guidance, turning complex labels into clear and practical insights.
 
