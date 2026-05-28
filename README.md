@@ -1,12 +1,16 @@
-﻿# Labelyze_DB
-Product and ingredient database for the Labelyze app. Updated via GitHub releases - the app pulls labelyze_india.db automatically on each release.
+# Labelyze_DB
 
+Product and ingredient database powering the Labelyze app.
+
+The app automatically downloads the latest `labelyze_india.db` database from GitHub Releases.
+
+---
 
 # Labelyze
 
 India's first global-standard product scanner for food, cosmetics, and baby products.
 
-Labelyze helps people understand what they buy by checking ingredients against **FSSAI, EU, and FDA standards** and turning labels into clear, practical insights.
+Labelyze helps people understand what they buy by analyzing ingredients against regulatory references including FSSAI, CDSCO, FDA, WHO, and EU guidance, turning complex labels into clear and practical insights.
 
 <p align="center">
   <a href="https://labelyze.in">Website</a> •
@@ -15,143 +19,44 @@ Labelyze helps people understand what they buy by checking ingredients against *
 
 ---
 
-## Why Labelyze
+## About This Repository
 
-Many products approved locally carry warnings, usage limits, or outright bans in other countries.
+This repository contains the public offline database used by the Labelyze mobile application.
 
-Most people read nutrition labels. Very few understand ingredient labels.
+The database includes:
 
-Labelyze closes that gap by helping users scan products and instantly understand what is inside, what regulators say about each ingredient, and what may matter personally.
+* Product metadata
+* Barcode mappings
+* Ingredient lists
+* Nutrition information
+* Ingredient normalization
+* Regulatory reference mappings
 
----
+This repository does not include:
 
-## What It Does
-
-### Barcode Scan
-
-Point your camera at a barcode. Results load instantly from the on-device database with no internet required.
-
-### Ingredient Scan
-
-Use OCR to read ingredient lists directly from packaging when no barcode is available. A confidence indicator shows how cleanly the label was read.
-
-### Manual Entry
-
-Paste or type ingredients from online listings, damaged packaging, or imported products.
-
-### Ingredient Explainer
-
-Tap the info button on any ingredient to see a full breakdown: what it is, what products it is commonly found in, regulatory status across FSSAI, EU, FDA, and WHO, and suitability flags (Not Vegan, Children Risk, Avoid if Pregnant, Sensitive Skin Risk, Not Reef Safe, Keep from Infants, Inhalation Risk).
+* Proprietary application code
+* Internal scoring systems
+* APIs
+* Moderation tools
+* Private infrastructure
 
 ---
 
-## Core Features
+## License
 
-- 590+ Indian products in the offline database
-- Multi-regulator checks: FSSAI, EU, FDA, WHO
-- Smart scoring with plain-English explanations
-- Grade A to F with category benchmark (better than X% of scanned products)
-- Nutrition analysis with HIGH / MED / LOW context
-- Health condition and allergen personalisation
-- Ingredient explainer with uses, regulatory detail, and suitability tags
-- OCR confidence indicator for ingredient scans
-- Scan history and saved products
-- Light mode and dark mode
-- Fully offline experience
-- No account required
-- Nothing leaves your phone
+This database is licensed under the Open Database License (ODbL) v1.0.
+
+Full license text:
+https://opendatacommons.org/licenses/odbl/1-0/
 
 ---
 
-## Product Tour
+## Legal Notice
 
-<table align="center">
-<tr>
-<td align="center">
-<img src="snapshots/onboarding-1.png" width="220"/><br>
-<b>Onboarding</b><br>
-Regulatory Gap
-</td>
-<td align="center">
-<img src="snapshots/onboarding-2.png" width="220"/><br>
-<b>Onboarding</b><br>
-Real Scan Example
-</td>
-<td align="center">
-<img src="snapshots/discover.png" width="220"/><br>
-<b>Discover</b><br>
-Better Everyday Picks
-</td>
-</tr>
+Data may be derived from publicly available product labels, manufacturer disclosures, barcode records, and regulatory references including FSSAI, CDSCO, FDA, WHO, and EU guidance.
 
-<tr>
-<td align="center">
-<img src="snapshots/history.png" width="220"/><br>
-<b>History</b><br>
-Recent Scan Trail
-</td>
-<td align="center">
-<img src="snapshots/scanner.png" width="220"/><br>
-<b>Scanner</b><br>
-Barcode and Ingredient Scan
-</td>
-<td align="center">
-<img src="snapshots/decode.png" width="220"/><br>
-<b>Decode</b><br>
-Category Rankings
-</td>
-</tr>
+Labelyze is an independent project and is not affiliated with or endorsed by any regulatory authority or product manufacturer.
 
-<tr>
-<td align="center" colspan="3">
-<img src="snapshots/profile.png" width="220"/><br>
-<b>Profile</b><br>
-Preferences and Dashboard
-</td>
-</tr>
-</table>
+Product names, trademarks, and brand assets belong to their respective owners.
 
----
-
-## Roadmap
-
-### v1.8
-
-- Adulteration alerts card on result screen
-- Cosmetics product scanning (full barcode mode)
-- Shareable scan result cards
-
-### v2.0
-
-- Label Lie Detector for misleading front-pack claims
-- Better product alternatives for low scores
-- Monthly insights and progress reports
-- Family profiles with separate preferences
-
-### v3.0
-
-- AR shelf scanning while shopping
-- Medicine scanner
-- Price vs health score comparisons
-- Lightweight community reviews
-
----
-
-## Built For India
-
-Designed around Indian shelves, Indian brands, and Indian buying habits.
-
----
-
-## Privacy First
-
-- No account needed
-- No unnecessary tracking
-- Offline-first design
-- Nothing leaves your phone unless you choose to share it
-
----
-
-## Status
-
-v1.7.0 on Google Play internal testing. Actively building and improving.
+Labelyze trademarks, branding, APIs, scoring systems, and application logic are not licensed under ODbL.
